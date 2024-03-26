@@ -23,7 +23,7 @@ public class Leiturista {
                     System.out.println("Resultado da busca em " + caminhoArquivo + ": " + linha);
                 }
             }
-
+            semaphore.release();
             leitor.close();
         } catch (InterruptedException e) {
             e.printStackTrace();
